@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>\
+
+    <script>
+        let student = [
+            {
+                fullname: 'นายตั้งใจ เรียนมาก',
+                age: 18,
+                year: 1,
+                gpa: 3.40,
+                help: true
+            },
+            {
+                fullname: 'นายส่งงาน ตลอดมา',
+                age: 19,
+                year: 2,
+                gpa: 3.00,
+                help: false
+            },
+            {
+                fullname: 'นางสาวใสใจ่ ดีงาม',
+                age: 20,
+                year: 3,
+                gpa: 2.90,
+                help: true
+            }
+        ]
+
+        for (var i = 0; i < 3; i++) {
+            year = 2564 - student[i].age
+            if (i == 0) {
+                console.log(student[i].fullname + 'เกิดเมื่อปี ' + year + ' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย')
+            }
+            if (i == 1) {
+                console.log(student[i].fullname + 'เกิดเมื่อปี ' + year + ' ไม่ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยไม่ถึงเกณฑ์ และยังไม่ได้ช่วยงานภาควิชา')
+            }
+            if (i == 2) {
+                console.log(student[i].fullname + 'เกิดเมื่อปี ' + year + ' ได้รับทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย')
+            }
+        }
+
+        for (var i = 0; i < 3; i++) {
+            if (i == 0) {
+                console.log('ชั้นปีที่' + (i + 1))
+                if (student[i].gpa > 3.20) {
+                    console.log(student[i].fullname + ' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย')
+                }
+            }
+            if (i == 1) {
+                console.log('ชั้นปีที่' + (i + 1))
+                if (student[i].gpa > 3.20) {
+                    console.log(student[i].fullname + ' ไม่ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยไม่ถึงเกณฑ์ และยังไม่ได้ช่วยงานภาควิชา')
+                }
+                else {
+                    console.log('ไม่มี')
+                }
+            }
+            if (i == 2) {
+                console.log('ชั้นปีที่' + (i + 1))
+                if (student[i].gpa > 2.75) {
+                    console.log(student[i].fullname + 'ได้รับทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย')
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+<h1> Basic JavaScript</h1>
+</body>
+
+</html>
